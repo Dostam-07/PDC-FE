@@ -1,0 +1,98 @@
+{
+  "frameworks": [
+    {
+      "id": "lfa",
+      "name": "Logical Framework Approach (LFA)",
+      "version": "1.2",
+      "active": true,
+      "description": "Standard matrix mapping Challenge -> Impact -> Outcomes -> Outputs -> Activities -> Inputs/Resources with Personas, Metrics & M&E.",
+      "components": [
+        "Challenge Statement",
+        "Impact",
+        "Impact Indicators",
+        "Outcomes",
+        "Outcome Indicators",
+        "Outputs",
+        "Output Indicators",
+        "Activities",
+        "Activity Metrics",
+        "Personas & Stakeholders",
+        "Assumptions",
+        "Risks & Mitigations",
+        "Resources & Inputs",
+        "Means of Verification"
+      ]
+    },
+    {
+      "id": "lcf",
+      "name": "Logical Competency Framework (LCF)",
+      "version": "1.0",
+      "active": false,
+      "description": "Competency-based framework mapping skills, behaviors, learning progression, and mastery indicators across stakeholder tiers.",
+      "components": [
+        "Core Competencies",
+        "Target Tiers",
+        "Mastery Indicators",
+        "Learning Paths",
+        "Assessment Rubrics"
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "useCase": "General Education Program Design",
+      "frameworkId": "lfa",
+      "isDefault": true
+    },
+    {
+      "useCase": "Competency Building & Pedagogy",
+      "frameworkId": "lcf",
+      "isDefault": false
+    }
+  ],
+  "onboardingQuestions": [
+    {
+      "id": "name",
+      "field": "name",
+      "question": "Welcome to the Programme Design Companion! Let's get to know you. What is your name?",
+      "mandatory": false,
+      "options": ["Sanskriti", "Rajesh Sharma", "Ananya Gupta"],
+      "placeholder": "Enter your full name"
+    },
+    {
+      "id": "role",
+      "field": "role",
+      "question": "What is your primary role or designation in education program design?",
+      "mandatory": true,
+      "options": ["Program Manager", "State Education Leader", "District Education Officer", "Academic Consultant"],
+      "placeholder": "Select or type your designation"
+    },
+    {
+      "id": "state",
+      "field": "state",
+      "question": "Which State or Geography do you primarily design interventions for?",
+      "mandatory": true,
+      "options": ["Punjab", "Rajasthan", "Bihar", "Uttar Pradesh", "National Level"],
+      "placeholder": "Select or type your state/region"
+    },
+    {
+      "id": "focusArea",
+      "field": "focusArea",
+      "question": "What is your main Programme Focus Area?",
+      "mandatory": true,
+      "options": ["Foundational Literacy & Numeracy (FLN)", "Teacher Professional Development (TPD)", "School Leadership", "Secondary Education Reform"],
+      "placeholder": "Select or type focus area"
+    },
+    {
+      "id": "language",
+      "field": "language",
+      "question": "What is your preferred language for responses and outputs?",
+      "mandatory": true,
+      "options": ["English", "Hindi", "Hinglish", "Tamil"],
+      "placeholder": "Select your language"
+    }
+  ],
+  "deflectionMessage": "I'm designed to help with programme design, education-related knowledge, and programme planning. I'd be happy to help you design a programme, explore frameworks, or answer questions related to education and programme implementation.",
+  "resendOtpTimerSeconds": 30,
+  "maxSocraticQuestions": 3
+}

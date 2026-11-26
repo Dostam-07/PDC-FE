@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased selection:bg-purple-600 selection:text-white;
+  }
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes canvasHighlightPulse {
+  0% { background-color: rgba(243, 232, 255, 0.95); }
+  60% { background-color: rgba(243, 232, 255, 0.4); }
+  100% { background-color: transparent; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.15s ease-out forwards;
+}
+
+.animate-canvas-pulse {
+  animation: canvasHighlightPulse 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Indic Scripts Headroom Guard: Prevents vowel matras and conjuncts from clipping */
+[lang="Hindi"], [lang="Kannada"], [lang="Tamil"], [lang="Telugu"], [lang="Marathi"], [lang="Gujarati"],
+[lang="hi"], [lang="kn"], [lang="ta"], [lang="te"], [lang="mr"], [lang="gu"],
+.indic-script-active,
+.indic-text {
+  line-height: 1.65 !important;
+  letter-spacing: 0.015em;
+}
+
+.indic-script-active p,
+.indic-script-active td,
+.indic-script-active li,
+.indic-script-active span,
+.indic-script-active button,
+.indic-script-active .font-sans {
+  line-height: 1.65 !important;
+}
+
+/* Headroom Protection: Replaces tight fixed-height text containers with flexible vertical padding */
+.indic-script-active :is(.h-5, .h-6, .h-7):not(img):not(svg):not(canvas):not(video):not(.w-5):not(.w-6):not(.w-7) {
+  height: auto !important;
+  min-height: 1.7rem !important;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+/* Audio Pulse / Voice Waveform Animations */
+@keyframes soundwave {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+@keyframes listeningPulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.18); opacity: 0.35; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+.animate-soundwave-1 { animation: soundwave 1s ease-in-out infinite; }
+.animate-soundwave-2 { animation: soundwave 0.8s ease-in-out infinite 0.15s; }
+.animate-soundwave-3 { animation: soundwave 1.1s ease-in-out infinite 0.3s; }
+.animate-soundwave-4 { animation: soundwave 0.75s ease-in-out infinite 0.2s; }
+.animate-soundwave-5 { animation: soundwave 0.9s ease-in-out infinite 0.4s; }
+
+.animate-listening-glow {
+  animation: listeningPulse 2s ease-in-out infinite;
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge and Firefox */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

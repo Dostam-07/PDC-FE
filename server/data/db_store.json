@@ -1,0 +1,229 @@
+{
+  "users": {
+    "default-user": {
+      "id": "default-user",
+      "name": "Sanskriti Sharma",
+      "phone": "+91 9876543210",
+      "role": "State Education Leader",
+      "organization": "State Education Transformation Cell",
+      "state": "Uttar Pradesh",
+      "focusArea": "Teacher Professional Development (TPD)",
+      "language": "English",
+      "onboarded": true
+    }
+  },
+  "conversations": [
+    {
+      "id": "conv-sample-1",
+      "title": "Punjab FLN Literacy Intervention Design",
+      "updatedAt": "2026-07-27T06:17:57.234Z",
+      "context": {
+        "challenge": "Low reading fluency among Grade 3 primary school students in Punjab",
+        "expectedChange": "Teachers conduct daily structured reading blocks and fortnightly peer reviews",
+        "scope": "Primary schools across 3 districts in Punjab over 2 academic years",
+        "goal": "To address Low reading fluency among Grade 3 primary school students in Punjab by achieving Teachers conduct daily structured reading blocks across Primary schools across 3 districts in Punjab over 2 academic years.",
+        "inDesignWorkflow": true,
+        "stage": "FINAL_LFA_GENERATED"
+      },
+      "messages": [
+        {
+          "id": "m-1",
+          "sender": "user",
+          "text": "We want to improve student reading fluency in Punjab primary schools.",
+          "timestamp": "10:30 AM"
+        },
+        {
+          "id": "m-2",
+          "sender": "ai",
+          "text": "Hi! I'm your Programme Design Companion. Thank you for sharing. To provide the most relevant recommendations, if this challenge is addressed successfully, what specific change would you expect to see in people, practices, or systems?",
+          "timestamp": "10:30 AM",
+          "quickReplies": [
+            "Teachers use daily structured reading blocks",
+            "FLN scores improve by 30%"
+          ]
+        },
+        {
+          "id": "m-3",
+          "sender": "user",
+          "text": "Teachers conduct daily structured reading blocks and fortnightly peer reviews across 3 districts in Punjab over 2 years.",
+          "timestamp": "10:31 AM"
+        },
+        {
+          "id": "m-4",
+          "sender": "ai",
+          "text": "Based on what you've shared, here is the synthesized goal for your programme:\n\n🎯 **Programme Goal:** To address low reading fluency in Grade 3 by establishing daily structured reading blocks and peer reviews across 3 districts in Punjab over 2 academic years.\n\nDoes this accurately reflect your goal, or would you like to modify it?",
+          "timestamp": "10:31 AM",
+          "quickReplies": [
+            "Yes, that's correct",
+            "Modify Goal"
+          ]
+        },
+        {
+          "id": "m-5",
+          "sender": "user",
+          "text": "Yes, that's correct",
+          "timestamp": "10:32 AM"
+        },
+        {
+          "id": "u-1785133077234",
+          "sender": "user",
+          "text": "hi",
+          "timestamp": "11:47 am"
+        },
+        {
+          "id": "ai-1785133077235",
+          "sender": "ai",
+          "text": "### Topic Summary\n(Sourced from External Web Search) Guidance for \"hi\" draws upon national and international education research benchmarks.\n\n### Key Insights\n• Global Evidence Base: Successful initiatives emphasize structured pedagogical materials and continuous mentorship.\n• Systemic Integration: Aligning district-level administrative monitoring with school leadership reviews improves intervention retention.\n• Evaluative Rigor: Implementing verified baseline and spot-check rubrics ensures measurable progress.\n\nWould you like to build a structured programme plan around this topic using our LFA framework?",
+          "timestamp": "11:47 am",
+          "sources": [
+            {
+              "name": "External Education Knowledge Base: hi",
+              "type": "external web search",
+              "link": "https://scholar.google.com/scholar?q=hi"
+            }
+          ],
+          "quickReplies": [
+            "Start Programme Design",
+            "Explore Frameworks",
+            "Ask Follow-up"
+          ]
+        }
+      ]
+    }
+  ],
+  "feedbackLogs": [],
+  "knowledgeGaps": [],
+  "selectionLogs": [
+    {
+      "id": "log-1785133077234",
+      "conversationId": "conv-sample-1",
+      "query": "hi",
+      "intentDetected": "GUIDED_DESIGN_FOLLOWUP",
+      "frameworkSelected": "LFA (Logical Framework Approach)",
+      "timestamp": "2026-07-27T06:17:57.234Z"
+    }
+  ],
+  "config": {
+    "frameworks": [
+      {
+        "id": "lfa",
+        "name": "Logical Framework Approach (LFA)",
+        "version": "1.2",
+        "active": true,
+        "description": "Standard matrix mapping Challenge -> Impact -> Outcomes -> Outputs -> Activities -> Inputs/Resources with Personas, Metrics & M&E.",
+        "components": [
+          "Challenge Statement",
+          "Impact",
+          "Impact Indicators",
+          "Outcomes",
+          "Outcome Indicators",
+          "Outputs",
+          "Output Indicators",
+          "Activities",
+          "Activity Metrics",
+          "Personas & Stakeholders",
+          "Assumptions",
+          "Risks & Mitigations",
+          "Resources & Inputs",
+          "Means of Verification"
+        ]
+      },
+      {
+        "id": "lcf",
+        "name": "Logical Competency Framework (LCF)",
+        "version": "1.0",
+        "active": false,
+        "description": "Competency-based framework mapping skills, behaviors, learning progression, and mastery indicators across stakeholder tiers.",
+        "components": [
+          "Core Competencies",
+          "Target Tiers",
+          "Mastery Indicators",
+          "Learning Paths",
+          "Assessment Rubrics"
+        ]
+      }
+    ],
+    "mappings": [
+      {
+        "useCase": "General Education Program Design",
+        "frameworkId": "lfa",
+        "isDefault": true
+      },
+      {
+        "useCase": "Competency Building & Pedagogy",
+        "frameworkId": "lcf",
+        "isDefault": false
+      }
+    ],
+    "onboardingQuestions": [
+      {
+        "id": "name",
+        "field": "name",
+        "question": "Welcome to the Programme Design Companion! Let's get to know you. What is your name?",
+        "mandatory": false,
+        "options": [
+          "Sanskriti",
+          "Rajesh Sharma",
+          "Ananya Gupta"
+        ],
+        "placeholder": "Enter your full name"
+      },
+      {
+        "id": "role",
+        "field": "role",
+        "question": "What is your primary role or designation in education program design?",
+        "mandatory": true,
+        "options": [
+          "Program Manager",
+          "State Education Leader",
+          "District Education Officer",
+          "Academic Consultant"
+        ],
+        "placeholder": "Select or type your designation"
+      },
+      {
+        "id": "state",
+        "field": "state",
+        "question": "Which State or Geography do you primarily design interventions for?",
+        "mandatory": true,
+        "options": [
+          "Punjab",
+          "Rajasthan",
+          "Bihar",
+          "Uttar Pradesh",
+          "National Level"
+        ],
+        "placeholder": "Select or type your state/region"
+      },
+      {
+        "id": "focusArea",
+        "field": "focusArea",
+        "question": "What is your main Programme Focus Area?",
+        "mandatory": true,
+        "options": [
+          "Foundational Literacy & Numeracy (FLN)",
+          "Teacher Professional Development (TPD)",
+          "School Leadership",
+          "Secondary Education Reform"
+        ],
+        "placeholder": "Select or type focus area"
+      },
+      {
+        "id": "language",
+        "field": "language",
+        "question": "What is your preferred language for responses and outputs?",
+        "mandatory": true,
+        "options": [
+          "English",
+          "Hindi",
+          "Hinglish",
+          "Tamil"
+        ],
+        "placeholder": "Select your language"
+      }
+    ],
+    "deflectionMessage": "I'm designed to help with programme design, education-related knowledge, and programme planning. I'd be happy to help you design a programme, explore frameworks, or answer questions related to education and programme implementation.",
+    "resendOtpTimerSeconds": 30,
+    "maxSocraticQuestions": 3
+  }
+}

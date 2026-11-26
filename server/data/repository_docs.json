@@ -1,0 +1,42 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Logical Framework Approach (LFA) Handbook for Education Interventions",
+    "category": "Frameworks",
+    "summary": "Comprehensive guide on building Logical Framework Analysis matrices for large-scale education programs at district and state levels.",
+    "content": "The Logical Framework Approach (LFA) is a systematic methodology for planning, managing, and evaluating projects. Key components of an LFA matrix include: Impact (long-term goal), Outcomes (short to medium term changes in practices/behavior), Outputs (direct deliverables such as trained teachers or materials distributed), Activities (specific steps taken to achieve outputs), Inputs (human and financial resources required), Personas (stakeholder roles and responsibilities), and Indicators with baseline/target metrics and Means of Verification. Guardrails ensure activities are not confused with outcomes and indicators are objectively verifiable.",
+    "tags": ["LFA", "Logical Framework", "Design", "Framework", "M&E"]
+  },
+  {
+    "id": "doc-002",
+    "title": "Foundational Literacy & Numeracy (FLN) Implementation Manual - Punjab & Rajasthan",
+    "category": "Primary Education",
+    "summary": "State-level implementation strategy for FLN programs focusing on primary school teacher mentorship and student learning outcomes.",
+    "content": "FLN interventions require structured daily 90-minute literacy blocks and 60-minute numeracy blocks. Key success factors include fortnightly classroom observation rubrics conducted by Cluster Resource Center Co-ordinators (CRCCs), monthly reflective learning meetings for teachers, and continuous formative student assessments. In Rajasthan and Punjab FLN programs, assigning dedicated mentor teachers for 5 schools each improved student competency achievement by 35% over two academic years.",
+    "tags": ["FLN", "Literacy", "Numeracy", "Punjab", "Rajasthan", "Primary Education"]
+  },
+  {
+    "id": "doc-003",
+    "title": "State-Wide Teacher Professional Development (TPD) & Mentorship Framework",
+    "category": "Teacher Training",
+    "summary": "Guidelines for designing government school teacher capacity building programs across districts.",
+    "content": "Effective TPD shifts away from one-off mass cascade training toward continuous school-based mentorship and peer observations. Program models should define clear personas (Head Teacher, District Coordinator, Master Trainer, Classroom Teacher), set measurable performance indicators (e.g. % of teachers utilizing lesson plans correctly), and establish bi-weekly feedback loops. Process metrics must measure actual classroom practice adoption rather than self-reported attendance.",
+    "tags": ["Teacher Training", "TPD", "Mentorship", "Classroom Practice", "Pedagogy"]
+  },
+  {
+    "id": "doc-004",
+    "title": "School Leadership Development & System Transformation Guide",
+    "category": "School Leadership",
+    "summary": "Strategies for empowering Headmasters and District Education Officers (DEOs) as academic and administrative leaders.",
+    "content": "School leadership interventions focus on moving Headmasters from administrative management to instructional leadership. Key program components: 1) Monthly academic review meetings, 2) Data-driven decision making rubrics using student progress tracking, 3) School Development Plans (SDP) led by School Management Committees (SMCs). Indicators include frequency of classroom visits by Headmasters and % of schools completing quarterly academic audits.",
+    "tags": ["School Leadership", "Headmasters", "DEO", "System Leadership", "Governance"]
+  },
+  {
+    "id": "doc-005",
+    "title": "Monitoring and Evaluation (M&E) Frameworks for Education Projects",
+    "category": "Monitoring & Evaluation",
+    "summary": "Standardized metrics, indicators, and data collection tools for tracking education program performance.",
+    "content": "A robust education M&E framework combines process indicators (tracking input usage, activity completion rate, training attendance) with outcome indicators (changes in teacher instruction, student learning growth, stakeholder participation). Data collection methods include digital classroom observation rubrics, monthly review dashboards, quarterly student spot-checks, and baseline/endline evaluation surveys.",
+    "tags": ["M&E", "Indicators", "Verification", "Metrics", "Evaluation"]
+  }
+]
